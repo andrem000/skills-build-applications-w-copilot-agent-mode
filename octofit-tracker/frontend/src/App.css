@@ -1,0 +1,15 @@
+.app-shell {
+  max-width: 48rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+p {
+  margin: 0;
+  color: #4b5563;
+}
