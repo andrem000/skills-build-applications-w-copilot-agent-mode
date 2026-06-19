@@ -4,7 +4,7 @@ import teamsRouter from './routes/teams.js';
 import activitiesRouter from './routes/activities.js';
 import leaderboardRouter from './routes/leaderboard.js';
 import workoutsRouter from './routes/workouts.js';
-import { connectDb } from './database.js';
+import { connectDb } from './config/database.js';
 
 const app = express();
 const port = process.env.PORT ? Number(process.env.PORT) : 8000;
