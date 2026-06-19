@@ -1,4 +1,4 @@
-import { connectDb } from '../db.js';
+import { connectDb } from '../database.js';
 import User from '../models/user.js';
 import Team from '../models/team.js';
 import Activity from '../models/activity.js';
