@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
     .populate('team', 'name score')
     .select('-__v')
     .lean();
-  res.json({ leaderboard });
+  res.json(leaderboard);
 });
 
 export default router;

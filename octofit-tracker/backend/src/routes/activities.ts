@@ -9,12 +9,12 @@ router.get('/', async (req, res) => {
     .populate('team', 'name')
     .select('-__v')
     .lean();
-  res.json({ activities });
+  res.json(activities);
 });
 
 router.post('/', async (req, res) => {
   const activity = await Activity.create(req.body);
-  res.status(201).json({ activity });
+  res.status(201).json(activity);
 });
 
 export default router;
